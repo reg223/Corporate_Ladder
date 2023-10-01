@@ -11,8 +11,7 @@ public class PlayerJump : MonoBehaviour
     public Transform feet;
     public LayerMask groundLayer;
     public LayerMask enemyLayer;
-    public bool canJump = false;
-    public int jumpTimes = 0;
+    public bool canJump = true;
     public bool isAlive = true;
     //public AudioSource JumpSFX; 
 
@@ -24,12 +23,9 @@ public class PlayerJump : MonoBehaviour
 
     void Update()
     {
-        if ((IsGrounded()) || (jumpTimes <= 1))
-        {
+        if (IsGrounded()) {
             canJump = true;
-        }
-        else if (jumpTimes > 1)
-        {
+        } else {
             canJump = false;
         }
 
@@ -41,7 +37,6 @@ public class PlayerJump : MonoBehaviour
 
     public void Jump()
     {
-        jumpTimes += 1;
         rb.velocity = Vector2.up * jumpForce;
         // anim.SetTrigger("Jump");
         // JumpSFX.Play();
@@ -52,12 +47,10 @@ public class PlayerJump : MonoBehaviour
 
     public bool IsGrounded()
     {
-        Collider2D groundCheck = Physics2D.OverlapCircle(feet.position, 2f, groundLayer);
-        Collider2D enemyCheck = Physics2D.OverlapCircle(feet.position, 2f, enemyLayer);
-        if ((groundCheck != null) || (enemyCheck != null))
+        Collider2D groundCheck = Physics2D.OverlapCircle(feet.position, 10f, groundLayer);
+        if ((groundCheck != null) )
         {
             //Debug.Log("I am trouching ground!");
-            jumpTimes = 0;
             return true;
         }
         return false;

@@ -270,6 +270,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   canJump: 1
+  jumpTimes: 0
   isAlive: 1
 --- !u!114 &196587507
 MonoBehaviour:
@@ -296,7 +297,7 @@ GameObject:
   - component: {fileID: 568805793}
   - component: {fileID: 568805796}
   - component: {fileID: 568805794}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -547,7 +548,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1757866138}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}

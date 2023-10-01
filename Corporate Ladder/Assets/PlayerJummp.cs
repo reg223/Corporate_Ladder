@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
 
-public class PlayerJump : MonoBehaviour {
+public class PlayerJummp : MonoBehaviour {
 
     //public Animator anim;
     public Rigidbody2D rb;
@@ -21,9 +21,9 @@ public class PlayerJump : MonoBehaviour {
     }
 
     void Update() {
-        if ((IsGrounded()) || (jumpTimes <= 1)){
+        if ((IsGrounded()) || (jumpTimes < 1)){
                 canJump = true;
-        }  else if (jumpTimes > 1){
+        }  else if (jumpTimes >= 1){
                 canJump = false;
         }
 
@@ -46,7 +46,7 @@ public class PlayerJump : MonoBehaviour {
         Collider2D groundCheck = Physics2D.OverlapCircle(feet.position, 2f, groundLayer);
         Collider2D enemyCheck = Physics2D.OverlapCircle(feet.position, 2f, enemyLayer);
         if ((groundCheck != null) || (enemyCheck != null)) {
-                Debug.Log("I am touching ground!");
+                //Debug.Log("I am touching ground!");
                 jumpTimes = 0;
                 return true;
         }

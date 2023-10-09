@@ -11,4 +11,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Zed_Workspace.unity
     guid: 26b1a80c1da2844d48d750caa9cae831
+  - enabled: 1
+    path: Assets/Scenes/Eleanor_Workspace.unity
+    guid: dd8f65ced40e44c28beaf8b48f6c135b
+  - enabled: 1
+    path: Assets/Scenes/Nick-Workspace.unity
+    guid: 44838931869e74e8babce177c3274806
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 0122ed02f279548e1add501b5e9fdbed
+  - enabled: 1
+    path: Assets/Scenes/CreditScene.unity
+    guid: 258b35f7e62aa4b31a92b8152b29b654
   m_configObjects: {}

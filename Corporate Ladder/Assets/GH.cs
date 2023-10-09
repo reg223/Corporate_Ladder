@@ -61,7 +61,4 @@ public class GameHandler : MonoBehaviour {
             Text tokensTextTemp = tokensText.GetComponent<Text>();
             tokensTextTemp.text = "GOLD: " + gotTokens;
       }
-
-
-
 }

@@ -20,46 +20,37 @@ public class PlayerMove : MonoBehaviour
         rb2D = transform.GetComponent<Rigidbody2D>();
     }
 
-    void Update()
-    {
+    void Update() {
         //NOTE: Horizontal axis: [a] / left arrow is -1, [d] / right arrow is 1 
         hMove = new Vector3(Input.GetAxis("Horizontal"), 0.0f, 0.0f);
-        if (isAlive == true)
-        {
+        if (isAlive == true) {
             transform.position = transform.position + hMove * runSpeed * Time.deltaTime;
-
-            if (Input.GetAxis("Horizontal") != 0)
-            {
+            if (Input.GetAxis("Horizontal") != 0) {
                 //       animator.SetBool ("Walk", true); 
                 //       if (!WalkSFX.isPlaying){ 
                 //             WalkSFX.Play(); 
                 //      } 
-            }
-            else
-            {
+            } else {
                 //      animator.SetBool ("Walk", false); 
                 //      WalkSFX.Stop(); 
             }
 
             // Turning: Reverse if input is moving the Player right and Player faces left 
-            if ((hMove.x < 0 && !FaceRight) || (hMove.x > 0 && FaceRight))
-            {
+            if ((hMove.x < 0 && !FaceRight) || (hMove.x > 0 && FaceRight)) {
                 playerTurn();
             }
         }
+        clampPlayerMovement();
     }
 
-    void FixedUpdate()
-    {
+    void FixedUpdate() {
         //slow down on hills / stops sliding from velocity
-        if (hMove.x == 0)
-        {
+        if (hMove.x == 0) {
             rb2D.velocity = new Vector2(rb2D.velocity.x / 1.1f, rb2D.velocity.y);
         }
     }
 
-    private void playerTurn()
-    {
+    private void playerTurn(){
         // NOTE: Switch player facing label
         FaceRight = !FaceRight;
 
@@ -67,5 +58,12 @@ public class PlayerMove : MonoBehaviour
         Vector3 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
+    }
+
+    //keep player within campera bounds
+    void clampPlayerMovement() {
+        Vector3 pos = Camera.main.WorldToViewportPoint(transform.position);
+        pos.x = Mathf.Clamp01(pos.x);
+        transform.position = Camera.main.ViewportToWorldPoint(pos);
     }
 }

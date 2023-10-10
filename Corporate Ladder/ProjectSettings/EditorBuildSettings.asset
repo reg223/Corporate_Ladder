@@ -5,16 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Zed_Workspace.unity
     guid: 26b1a80c1da2844d48d750caa9cae831
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Eleanor_Workspace.unity
     guid: dd8f65ced40e44c28beaf8b48f6c135b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Nick-Workspace.unity
     guid: 44838931869e74e8babce177c3274806
   - enabled: 1
@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndScene.unity
     guid: b39eafd3ba3b04699885a87364108b66
+  - enabled: 1
+    path: Assets/Scenes/GameScene.unity
+    guid: ae0fb267b1370459b84961aff5284b2d
   m_configObjects: {}

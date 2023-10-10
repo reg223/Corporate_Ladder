@@ -32,7 +32,7 @@ public class GameHandler2 : MonoBehaviour {
 
       public void StartGame(){
             playerScore = 0;
-            SceneManager.LoadScene("GameScene");
+            SceneManager.LoadScene("Mailroom");
       }
 
       public void QuitGame(){

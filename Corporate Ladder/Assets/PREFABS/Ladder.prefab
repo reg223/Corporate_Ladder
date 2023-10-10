@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1208469072542900009
+--- !u!1 &2669354987692565993
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,37 +8,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8711095207379336090}
-  - component: {fileID: 3084153497386832228}
-  m_Layer: 0
-  m_Name: $$$
+  - component: {fileID: 3404482297611344988}
+  - component: {fileID: 6300165893344277225}
+  m_Layer: 5
+  m_Name: ladder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8711095207379336090
+--- !u!4 &3404482297611344988
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1208469072542900009}
+  m_GameObject: {fileID: 2669354987692565993}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 5, y: 8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7750047434105996779}
+  m_Father: {fileID: 8632946862442020108}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &3084153497386832228
+--- !u!212 &6300165893344277225
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1208469072542900009}
+  m_GameObject: {fileID: 2669354987692565993}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -73,18 +73,18 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 428b46e280cbf4b90bfab73c5e64f276, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5dfc812d462964cdaa5e86523fe77224, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.51, y: 0.28}
+  m_Size: {x: 0.27, y: 0.88}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &6554026007300698383
+--- !u!1 &5129937797219004963
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,73 +92,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7750047434105996779}
-  - component: {fileID: -6530417160750501770}
-  - component: {fileID: -3902944838171436766}
-  - component: {fileID: 783672184509757150}
-  m_Layer: 0
-  m_Name: Money
+  - component: {fileID: 8632946862442020108}
+  - component: {fileID: 5929988835202218669}
+  - component: {fileID: 6346547520468268235}
+  m_Layer: 5
+  m_Name: Ladder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7750047434105996779
+--- !u!4 &8632946862442020108
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6554026007300698383}
+  m_GameObject: {fileID: 5129937797219004963}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 6.36, y: 2.99, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 8711095207379336090}
+  - {fileID: 3404482297611344988}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-6530417160750501770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6554026007300698383}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afa2673e27989441f8316c1937eb5aaf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedS: 25
-  distS: 0.01
-  speedR: 2
---- !u!114 &-3902944838171436766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6554026007300698383}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e131b0004eb864adeac36144d4ed1720, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameHandlerObj: {fileID: 0}
-  isHealthPickUp: 1
-  isSpeedBoostPickUp: 0
-  healthBoost: 50
-  speedBoost: 2
-  speedTime: 2
---- !u!61 &783672184509757150
+--- !u!61 &5929988835202218669
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6554026007300698383}
+  m_GameObject: {fileID: 5129937797219004963}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -195,5 +161,20 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8, y: 0.5}
+  m_Size: {x: 1, y: 7}
   m_EdgeRadius: 0
+--- !u!114 &6346547520468268235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5129937797219004963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a22b9c2649c94a24bd826549c44e6c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upSpeed: 10
+  canLadder: 0
+  canJump: 0

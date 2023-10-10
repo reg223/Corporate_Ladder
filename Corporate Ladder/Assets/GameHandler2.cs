@@ -33,7 +33,7 @@ public class GameHandler2 : MonoBehaviour {
       public void StartGame(){
             playerScore = 0;
             //NOTE: CHANGE SCENE NAME ONCE GAME SCENE IS MADE
-            SceneManager.LoadScene("Eleanor_Workspace_SamPlatformEdit");
+            SceneManager.LoadScene("GameScene");
       }
 
       public void QuitGame(){
@@ -50,5 +50,9 @@ public class GameHandler2 : MonoBehaviour {
 
       public void MainMenu(){
             SceneManager.LoadScene("MainMenu");
+      }
+
+      public void EndScene(){
+            SceneManager.LoadScene("EndScene");
       }
 }

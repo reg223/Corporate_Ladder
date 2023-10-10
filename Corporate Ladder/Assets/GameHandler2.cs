@@ -9,7 +9,7 @@ public class GameHandler2 : MonoBehaviour {
       public GameObject scoreText;
       private GameObject player;
       private string sceneName;
-      private int playerScore = 0;
+      private static int playerScore = 0;
 
       void Start(){
             UpdateScore();
@@ -23,7 +23,11 @@ public class GameHandler2 : MonoBehaviour {
 
       void UpdateScore(){
             Text scoreTextB = scoreText.GetComponent<Text>();
-            scoreTextB.text = "Salary: $" + playerScore;
+            if (SceneManager.GetActiveScene().name == "EndScene") {
+                  scoreTextB.text = "Final Salary: $" + playerScore;
+            } else {
+                  scoreTextB.text = "Salary: $" + playerScore;
+            }
       }
 
       public void StartGame(){

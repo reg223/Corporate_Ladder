@@ -31,8 +31,19 @@ public class GameHandler2 : MonoBehaviour {
       }
 
       public void StartGame(){
+            Time.timeScale = 1f;
+            GameHandler_PauseMenu.GameisPaused = false;
             playerScore = 0;
             SceneManager.LoadScene("Mailroom");
+      }
+
+      public void ReplayLevel(){
+            Time.timeScale = 1f;
+            GameHandler_PauseMenu.GameisPaused = false;
+
+            //FIX LATER!!!
+            // playerScore = startSceneScore;
+            // SceneManager.LoadScene("laskLevelDied");
       }
 
       public void QuitGame(){

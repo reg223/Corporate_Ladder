@@ -26,7 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CreditScene.unity
     guid: 258b35f7e62aa4b31a92b8152b29b654
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/NextLevel.unity
     guid: f911ae8934bd641b0b490d3ceb1aac89
   - enabled: 1
@@ -38,4 +38,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Intern.unity
     guid: 1f5c599f5faa94f2898ab21d173d1247
+  - enabled: 1
+    path: Assets/Scenes/Consultant.unity
+    guid: fc2a857070b2f4888954a482fcbdb1e9
   m_configObjects: {}

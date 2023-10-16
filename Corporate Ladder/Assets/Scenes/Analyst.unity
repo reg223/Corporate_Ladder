@@ -1539,6 +1539,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6224128468355218755, guid: 8966b25669ba54626b5c6f074ed5477f, type: 3}
   m_PrefabInstance: {fileID: 1570303064}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1570303067 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4269959308046362567, guid: 8966b25669ba54626b5c6f074ed5477f, type: 3}
+  m_PrefabInstance: {fileID: 1570303064}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1686411472
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2408,6 +2413,10 @@ PrefabInstance:
       propertyPath: targetSalary
       value: 300
       objectReference: {fileID: 0}
+    - target: {fileID: 9068002964906398668, guid: de1f763add4ee4109a646bb2da28c37a, type: 3}
+      propertyPath: nextLevelUI
+      value: 
+      objectReference: {fileID: 1570303067}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

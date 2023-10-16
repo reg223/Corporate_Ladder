@@ -6,12 +6,6 @@ public class PickUp : MonoBehaviour{
 
       public GameHandler2 gameHandlerObj;
       //public playerVFX playerPowerupVFX;
-      public bool isHealthPickUp = true;
-      public bool isSpeedBoostPickUp = false;
-
-      public int healthBoost = 50;
-      public float speedBoost = 2f;
-      public float speedTime = 2f;
 
       void Start(){
             gameHandlerObj = GameObject.FindWithTag("GameHandler2").GetComponent<GameHandler2>();

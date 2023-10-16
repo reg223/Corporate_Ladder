@@ -9,11 +9,15 @@ public class GameHandler2 : MonoBehaviour {
       public GameObject scoreText;
       private GameObject player;
       private string sceneName;
-      private static int playerScore = 0;
+      public static int playerScore = 0;
+      public GameObject targetSalText;
+      public int targetSalary = 0;
 
       void Start(){
             UpdateScore();
             player = GameObject.FindWithTag("Player");
+            Text targetSalTextB = targetSalText.GetComponent<Text>();
+            targetSalTextB.text = "Target Salary: $" + targetSalary;
       }
 
       public void AddScore(int points){
@@ -43,7 +47,7 @@ public class GameHandler2 : MonoBehaviour {
 
             //FIX LATER!!!
             // playerScore = startSceneScore;
-            // SceneManager.LoadScene("laskLevelDied");
+            // SceneManager.LoadScene("lastLevelDied");
       }
 
       public void QuitGame(){

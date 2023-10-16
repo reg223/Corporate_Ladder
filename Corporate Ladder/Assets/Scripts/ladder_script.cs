@@ -3,8 +3,6 @@ using System.Collections;
 using UnityEngine;
 
 public class LadderMove : MonoBehaviour {
-
-
         private Transform playerTrans;
         private Rigidbody2D playerRB;
         public float upSpeed = 10f;

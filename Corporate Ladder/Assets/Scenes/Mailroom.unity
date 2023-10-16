@@ -1338,6 +1338,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 290
       objectReference: {fileID: 0}
+    - target: {fileID: 1805560169408086112, guid: 8966b25669ba54626b5c6f074ed5477f, type: 3}
+      propertyPath: m_Text
+      value: 'Level: MAILROOM'
+      objectReference: {fileID: 0}
     - target: {fileID: 2047808674361844960, guid: 8966b25669ba54626b5c6f074ed5477f, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -13
@@ -1463,7 +1467,8 @@ PrefabInstance:
       value: 119
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4269959308046362567, guid: 8966b25669ba54626b5c6f074ed5477f, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8966b25669ba54626b5c6f074ed5477f, type: 3}
@@ -2339,7 +2344,9 @@ PrefabInstance:
       propertyPath: targetSalText
       value: 
       objectReference: {fileID: 510509671}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 482573385348064620, guid: de1f763add4ee4109a646bb2da28c37a, type: 3}
+    - {fileID: 9068002964906398668, guid: de1f763add4ee4109a646bb2da28c37a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -2681,8 +2688,8 @@ SceneRoots:
   - {fileID: 641715413069471377}
   - {fileID: 1874765256}
   - {fileID: 692202142}
+  - {fileID: 4647163970446872138}
   - {fileID: 1307524602}
   - {fileID: 642065306}
   - {fileID: 813398307}
-  - {fileID: 4647163970446872138}
   - {fileID: 996859232}

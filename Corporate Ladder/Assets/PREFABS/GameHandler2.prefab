@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7690965340027835754}
   - component: {fileID: 8279604153689320489}
+  - component: {fileID: 482573385348064620}
+  - component: {fileID: 9068002964906398668}
   m_Layer: 0
   m_Name: GameHandler2
   m_TagString: GameHandler2
@@ -45,3 +47,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 0}
+  targetSalText: {fileID: 0}
+  targetSalary: 900
+--- !u!114 &482573385348064620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7637389657806496403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e1817c243acc4d9996385b60d25bf09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenuUI: {fileID: 0}
+  mixer: {fileID: 24100000, guid: 513f2ed9cc5d84bdfbebaacf7c26db1e, type: 2}
+--- !u!114 &9068002964906398668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7637389657806496403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1ee07285936541e3986f6a40a098a66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextLevelUI: {fileID: 0}

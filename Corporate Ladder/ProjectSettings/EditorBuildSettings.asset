@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mailroom.unity
     guid: ae0fb267b1370459b84961aff5284b2d
+  - enabled: 1
+    path: Assets/Scenes/Intern.unity
+    guid: 1f5c599f5faa94f2898ab21d173d1247
   m_configObjects: {}

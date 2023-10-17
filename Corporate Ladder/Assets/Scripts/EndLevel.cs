@@ -20,7 +20,7 @@ public class EndLevel : MonoBehaviour
         salaryNeeded = gameHandler.targetSalary;
         salaryCollected = GameHandler2.playerScore;
         if (salaryCollected >= salaryNeeded){
-                canPass = true;
+            canPass = true;
         } else {
             canPass = false;
         }
@@ -28,7 +28,7 @@ public class EndLevel : MonoBehaviour
 
     public void OnTriggerEnter2D (Collider2D other){
         if (other.gameObject.tag == "Player"){
-            GetComponent<Collider2D>().enabled = false;
+            GetComponent<Collider2D>().enabled = true;
             //GetComponent< AudioSource>().Play();
             if(canPass) {
                 gameHandler.startScore = salaryCollected;

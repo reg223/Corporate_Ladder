@@ -2594,6 +2594,10 @@ PrefabInstance:
       value: End Goal
       objectReference: {fileID: 0}
     - target: {fileID: 3623890004111373013, guid: 119b8369c6d5740e79f260e2adc8f082, type: 3}
+      propertyPath: NextLevel
+      value: Boss
+      objectReference: {fileID: 0}
+    - target: {fileID: 3623890004111373013, guid: 119b8369c6d5740e79f260e2adc8f082, type: 3}
       propertyPath: gameHandler
       value: 
       objectReference: {fileID: 617963383}

@@ -21,8 +21,7 @@ public class EndLevel : MonoBehaviour
         salaryCollected = GameHandler2.playerScore;
         if (salaryCollected >= salaryNeeded){
                 canPass = true;
-        }
-        else {
+        } else {
             canPass = false;
         }
     }
@@ -32,7 +31,9 @@ public class EndLevel : MonoBehaviour
             GetComponent<Collider2D>().enabled = false;
             //GetComponent< AudioSource>().Play();
             if(canPass) {
+                gameHandler.startScore = salaryCollected;
                 SceneManager.LoadScene(NextLevel);
+                
             } else {
                 SceneManager.LoadScene("LoseScene");
             }

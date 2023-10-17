@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
+using System;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
@@ -10,6 +11,8 @@ public class GameHandler2 : MonoBehaviour {
       private GameObject player;
       private string sceneName;
       public static int playerScore = 0;
+      public static int levelScore = 0;
+      public int startScore = 0;
       public GameObject targetSalText;
       public int targetSalary = 0;
 
@@ -20,6 +23,9 @@ public class GameHandler2 : MonoBehaviour {
             targetSalTextB.text = "Target Salary: $" + targetSalary;
       }
 
+      void Update(){
+            levelScore = Math.Max(levelScore, startScore);
+      }
       public void AddScore(int points){
             playerScore += points;
             UpdateScore();
@@ -44,9 +50,14 @@ public class GameHandler2 : MonoBehaviour {
       public void ReplayLevel(){
             Time.timeScale = 1f;
             GameHandler_PauseMenu.GameisPaused = false;
-
-            SceneManager.LoadScene("Mailroom");
-            playerScore = 0;
+            playerScore = levelScore;
+            if (SceneManager.GetActiveScene().name != "LoseScene"){
+                  
+                  SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            } else {
+                  playerScore = 0;
+                  SceneManager.LoadScene("Mailroom");
+            }
             // SceneManager.LoadScene("lastLevelDied");
       }
 
@@ -69,6 +80,4 @@ public class GameHandler2 : MonoBehaviour {
       public void EndScene(){
             SceneManager.LoadScene("EndScene");
       }
-
-
 }

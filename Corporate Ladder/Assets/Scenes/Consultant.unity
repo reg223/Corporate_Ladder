@@ -5133,12 +5133,16 @@ PrefabInstance:
       value: End Goal
       objectReference: {fileID: 0}
     - target: {fileID: 3623890004111373013, guid: 119b8369c6d5740e79f260e2adc8f082, type: 3}
+      propertyPath: canPass
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3623890004111373013, guid: 119b8369c6d5740e79f260e2adc8f082, type: 3}
       propertyPath: exitOpen
       value: 
       objectReference: {fileID: 641715413069471378}
     - target: {fileID: 3623890004111373013, guid: 119b8369c6d5740e79f260e2adc8f082, type: 3}
       propertyPath: NextLevel
-      value: EndScene
+      value: Analyst
       objectReference: {fileID: 0}
     - target: {fileID: 3623890004111373013, guid: 119b8369c6d5740e79f260e2adc8f082, type: 3}
       propertyPath: exitClosed

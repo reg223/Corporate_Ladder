@@ -45,8 +45,8 @@ public class GameHandler2 : MonoBehaviour {
             Time.timeScale = 1f;
             GameHandler_PauseMenu.GameisPaused = false;
 
-            //FIX LATER!!!
-            // playerScore = startSceneScore;
+            SceneManager.LoadScene("Mailroom");
+            playerScore = 0;
             // SceneManager.LoadScene("lastLevelDied");
       }
 
@@ -69,4 +69,6 @@ public class GameHandler2 : MonoBehaviour {
       public void EndScene(){
             SceneManager.LoadScene("EndScene");
       }
+
+
 }

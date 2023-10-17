@@ -52,13 +52,11 @@ public class GameHandler2 : MonoBehaviour {
             GameHandler_PauseMenu.GameisPaused = false;
             playerScore = levelScore;
             if (SceneManager.GetActiveScene().name != "LoseScene"){
-                  
                   SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             } else {
                   playerScore = 0;
                   SceneManager.LoadScene("Mailroom");
             }
-            // SceneManager.LoadScene("lastLevelDied");
       }
 
       public void QuitGame(){

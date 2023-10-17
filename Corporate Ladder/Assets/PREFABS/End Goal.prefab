@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: beb02ec0a622f407fb89c7b199ae7201, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -98,7 +98,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7435e5c058304bd0a31c9a40800f1f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameHandlerObj: {fileID: 0}
+  gameHandler: {fileID: 0}
+  NextLevel: MainMenu
+  salaryCollected: 0
+  salaryNeeded: 0
+  canPass: 0
 --- !u!61 &1749217372620948765
 BoxCollider2D:
   m_ObjectHideFlags: 0
